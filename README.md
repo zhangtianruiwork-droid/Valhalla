@@ -129,6 +129,59 @@ npm run tauri build
 
 ---
 
+## 👤 作者 · Author
+
+**山而** — [@zhangtianruiwork-droid](https://github.com/zhangtianruiwork-droid)
+
+同系列项目：
+- [Maoxuan-Changzheng](https://github.com/zhangtianruiwork-droid/Maoxuan-Changzheng) — 毛选长征机：把《毛泽东选集》方法论提炼为可运行的对话协议
+
+---
+
+## 🙏 致谢 · Acknowledgements
+
+本项目站在以下开源项目的肩膀上构建：
+
+### 桌面框架
+| 项目 | 用途 |
+|------|------|
+| [Tauri](https://tauri.app/) | Rust 驱动的跨平台桌面框架，透明窗口、系统托盘 |
+| [Vite](https://vitejs.dev/) | 极速前端构建工具 |
+
+### 前端
+| 项目 | 用途 |
+|------|------|
+| [React](https://react.dev/) | UI 框架（v19） |
+| [TypeScript](https://www.typescriptlang.org/) | 类型安全 |
+| [Radix UI](https://www.radix-ui.com/) | 无障碍原语组件库（对话框、菜单、滚动区等） |
+| [Tailwind CSS](https://tailwindcss.com/) | 原子化 CSS |
+| [shadcn/ui](https://ui.shadcn.com/) | 基于 Radix + Tailwind 的组件集合 |
+| [Lucide React](https://lucide.dev/) | 图标库 |
+| [GSAP](https://gsap.com/) | 动画引擎 |
+| [Three.js](https://threejs.org/) / [@react-three/fiber](https://r3f.docs.pmnd.rs/) | 3D 渲染 |
+| [Sonner](https://sonner.emilkowal.ski/) | Toast 通知 |
+| [Recharts](https://recharts.org/) | 数据可视化 |
+| [React Hook Form](https://react-hook-form.com/) + [Zod](https://zod.dev/) | 表单与校验 |
+| [cmdk](https://cmdk.paco.me/) | 命令面板 |
+| [Embla Carousel](https://www.embla-carousel.com/) | 轮播组件 |
+| [Vaul](https://vaul.emilkowal.ski/) | Drawer 组件 |
+| [Lenis](https://lenis.darkroom.engineering/) | 平滑滚动 |
+| [Mammoth.js](https://github.com/mwilliamson/mammoth.js) | Word 文档解析 |
+
+### AI 服务
+| 项目 | 用途 |
+|------|------|
+| [DeepSeek API](https://platform.deepseek.com/) | 灵魂蒸馏 + 实时对话 |
+| [OpenAI Image API](https://platform.openai.com/docs/guides/images) | 像素精灵生成与姿态变换 |
+
+### Rust 生态
+| 项目 | 用途 |
+|------|------|
+| [Serde](https://serde.rs/) | Rust 序列化框架 |
+| [tauri-build](https://crates.io/crates/tauri-build) | Tauri 构建辅助 |
+
+---
+
 ## 📄 License
 
 MIT
@@ -136,5 +189,5 @@ MIT
 ---
 
 <p align="center">
-  <sub>Built with ❤️ using Tauri + React + DeepSeek + OpenAI Image API</sub>
+  <sub>Built with love by 山而 · Powered by Tauri + React + DeepSeek + OpenAI Image API</sub>
 </p>
