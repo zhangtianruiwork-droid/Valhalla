@@ -63,8 +63,8 @@ export const AppConfig = {
       const saved = JSON.parse(localStorage.getItem(PREFIX + 'config') || '{}');
       return {
         apiKey:        saved.apiKey        || '',
-        modelCreation: saved.modelCreation || 'deepseek-v3-0324',
-        modelChat:     saved.modelChat     || 'deepseek-v3-0324',
+        modelCreation: saved.modelCreation || 'deepseek-v4-pro',
+        modelChat:     saved.modelChat     || 'deepseek-v4-flash',
         openaiApiKey:  saved.openaiApiKey  || '',
         searchModel:   saved.searchModel   || 'gpt-4o',
         imageApiKey:   saved.imageApiKey   || '',
@@ -73,7 +73,7 @@ export const AppConfig = {
       };
     } catch {
       return {
-        apiKey: '', modelCreation: 'deepseek-v3-0324', modelChat: 'deepseek-v3-0324',
+        apiKey: '', modelCreation: 'deepseek-v4-pro', modelChat: 'deepseek-v4-flash',
         openaiApiKey: '', searchModel: 'gpt-4o',
         imageApiKey: '', imageApiBase: 'https://api.openai.com/v1', imageModel: 'gpt-image-1',
       };
