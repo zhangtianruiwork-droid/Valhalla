@@ -188,8 +188,23 @@ function repairJSONStrings(json: string): string {
     }
 
     if (ch === '"') {
-      inString = !inString;
-      result += ch;
+      if (!inString) {
+        inString = true;
+        result += ch;
+        continue;
+      }
+      // Inside a string: peek at the next non-whitespace char.
+      // If it's a JSON structural token the quote legitimately closes the string.
+      // Otherwise it's an unescaped quote embedded in content — escape it.
+      let j = i + 1;
+      while (j < json.length && (json[j] === ' ' || json[j] === '\t' || json[j] === '\r' || json[j] === '\n')) j++;
+      const next = j < json.length ? json[j] : '\0';
+      if (next === '\0' || next === ',' || next === '}' || next === ']' || next === ':') {
+        inString = false;
+        result += '"';
+      } else {
+        result += '\\"';
+      }
       continue;
     }
 
